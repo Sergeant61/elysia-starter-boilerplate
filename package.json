@@ -1,14 +1,29 @@
 {
-  "name": "app",
-  "version": "1.0.50",
+  "name": "elysia-api",
+  "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/app.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@bogeychan/elysia-logger": "^0.0.9",
+    "@elysiajs/cookie": "^0.7.0",
+    "@elysiajs/cors": "^0.7.0",
+    "@elysiajs/html": "^0.7.0",
+    "@elysiajs/jwt": "^0.7.0",
+    "@elysiajs/static": "^0.7.0",
+    "@elysiajs/swagger": "^0.7.1",
+    "bcryptjs": "^2.4.3",
+    "elysia": "^0.7.12",
+    "elysia-helmet": "^1.0.1",
+    "elysia-i18next": "^3.0.1",
+    "elysia-rate-limit": "^1.0.3",
+    "react": "^18.2.0",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.4",
+    "@types/react": "^18.2.22",
     "bun-types": "latest"
   },
   "module": "src/index.js"
